@@ -1,0 +1,63 @@
+<%- include ("../partials/header.ejs"); %>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="row" style="margin-top:20px;">
+            <h1 style="margin-top: 3em"><%= title %></h1>
+             <br>
+            <div>
+                <a href="/concert/add" class="btn btn-primary align-self-end" role="button">
+                    <i class="fas fa-plus-circle"></i>
+                    Add
+                </a>
+            </div>
+            <div style="margin-bottom: 10px;"></div>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover">
+                    <!-- Header Row-->
+                    <tr>
+                        <th class="text-center">Concert Name</th>
+                        <th class="text-center">Concert State</th>
+                        <th class="text-center">Concert Price Per Ticket</th>
+                        <th class="text-center" colspan="3">Actions</th>
+                    </tr>
+
+                    <!-- Repeatable Template Row -->
+                    
+                    <% for(let count=0; count < ConcertList.length; count++) { %>
+                        <tr>
+                            <td class="text-center">
+                                <%= ConcertList[count].name %>
+                            </td>
+                            <td class="text-center">
+                                <%= ConcertList[count].state %>
+                            </td>
+                            <td class="text-center">
+                                <%= ConcertList[count].price %>
+                            </td>
+                            <td class="text-center">
+                                <a href="/concert/details/<%= ConcertList[count]._id %>" 
+                                    class="btn btn-success btn-sm"> 
+                                <i class="fas fa-info"></i> </a>
+                            </td>
+                            <td class="text-center">
+                                <a href="/concert/edit/<%= ConcertList[count]._id %>"
+                                    class="btn btn-primary btn-sm">
+                                    <i class="fas fa-pencil-alt"></i> Edit</a>
+                            </td>
+                            <td class="text-center">
+                                <a href="/concert/delete/<%= ConcertList[count]._id %>"
+                                    class="btn btn-danger btn-sm">
+                                    <i class="fas fa-trash-alt"></i> Delete</a>
+                            </td>
+                        </tr>
+
+                        <% } %>
+                </table>
+            </div>
+            <div class="row">
+                
+            </div>
+        </div>
+    </main>
+    <%- include ("../partials/footer.ejs"); %>

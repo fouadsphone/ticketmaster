@@ -1,0 +1,46 @@
+<%- include ("../partials/autheader.ejs"); %>
+<link rel="stylesheet" href=".\stylesheets\login.css" />
+
+<div class="container">
+    
+
+        <div class="offset-md-3 col-md-3"style="margin-top: 1em" >
+            <h1><%= title %></h3>            
+            <% for(var i in messages) { %>
+                <div class="flash"><%= messages[i] %></div>
+            <% } %>
+            <form action="/users/signup" method="post" validate>
+                <div class="form-group">
+                    <label  style="margin-bottom: 0.3em">First Name:</label>
+                    <input style="margin-bottom: 1em"  type="text" name="firstName" value="<%= user.firstName %>" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label style="margin-bottom: 0.3em">Last Name:</label>
+                    <input style="margin-bottom: 1em"  type="text" name="lastName" value="<%= user.lastName %>" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label style="margin-bottom: 0.3em">Email:</label>
+                    <input style="margin-bottom: 1em"  type="text" name="email" value="<%= user.email %>" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label style="margin-bottom: 0.3em">Username:</label>
+                    <input style="margin-bottom: 1em"  type="text" name="username" value="<%= user.username %>" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label style="margin-bottom: 0.3em">Password:</label>
+                    <input style="margin-bottom: 1em"  type="password" name="password" value="<%= user.password %>" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label style="margin-bottom: 0.3em">Confirm Password:</label>
+                    <input style="margin-bottom: 1em"  type="password" name="password_confirm" class="form-control"/>
+                </div>
+                <br>
+                <div style="margin-bottom: 15px;">
+                    <input class="btn btn-primary" type="submit" value="signup" />
+                </div>
+            </form>
+
+    </div>
+</div>
+
+<%- include ("../partials/footer.ejs"); %>

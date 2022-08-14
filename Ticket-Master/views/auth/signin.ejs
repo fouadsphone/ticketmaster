@@ -1,0 +1,38 @@
+
+<%- include ("../partials/autheader.ejs"); %>
+<link rel="stylesheet" href=".\stylesheets\login.css" />
+
+
+    <div class="container" >
+        <div class="offset-md-3 col-md-3" style="margin-top: 3em">
+                <h1 style="margin-bottom: 1em"><%= title %></h1>
+                <% for(var i in messages) { %>
+                    <div class="flash"><%= messages[i] %></div>
+                <% } %>
+                <form action="/users/signin" method="post" >
+                    <div class="form-group">
+                        <label style="margin-bottom: 0.em" ><b>Username:</b></label>
+                        <input style="margin-bottom: 1em"  type="text" name="username" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label style="margin-bottom: 0.5em" ><b>Password:</b></label>
+                        <input type="password" name="password" class="form-control"/>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input class="btn btn-primary" type="submit" value="Login" />                    
+                    </div>
+                    <br>
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <a href="/users/signup" style="text-decoration: none">                
+                            <i class="fas fa-user-plus"></i> 
+                            Log in
+                        </a>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    
+    
+<%- include ("../partials/footer.ejs"); %>

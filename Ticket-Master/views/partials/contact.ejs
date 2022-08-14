@@ -1,0 +1,40 @@
+
+    
+<% if (title == "Contact Me") { %>
+  <link rel="stylesheet" href=".\stylesheets\contact.css" />
+
+    <div class="container-contact" >
+      <div class="row" > 
+        <div class="col-12"  >
+            <p><h2  style=" margin-left: 135px; margin-top: 20px;text-align:center"><b>Contact Us</b></h2></p>
+        </div>
+      </div>
+      <div class="row"style="margin-top: 50px;">
+        <div class="col-md-6"style="text-align:center;">
+          <img src="/images/contact.jpeg" style="width:400px; margin-left: 20px; margin-top: 5px;">
+          <div class="contact-icon" style="color: #000000;"> 
+            <p><i class="fa fa-map-marker fa-2x"></i><label style="margin-left: 12px;">M1H 2J9 Scarborough, 
+              <br>Toronto, Canada.</label><i class="fa fa-mobile fa-2x" style="margin-left: 105px;"></i><label style="margin-left: 12px;">+1 4379874255</label></p>
+          </div>
+        </div>
+        <div class="col-5 contact-form" >
+          
+            <label for="fn">First Name</label><br>
+            <input type="text"  name="fname" placeholder="First Name"><br>
+            <label for="ln">Last Name</label><br>
+            <input type="text"  name="lname" placeholder="Last Name"><br>
+            <label for="email">Email ID</label><br>
+            <input type="text" name="email" placeholder="Type Your Email Id here"><br>
+            
+            <label for="message">Message</label><br>
+            <textarea class="textarea" name="message" placeholder="Tell Us Something..."></textarea><br>
+            <button type="button" class="btn btn-dark" onclick="location.href='/'" style=" margin-top: 10px;">Submit</button>
+          
+        </div>
+      </div>
+    </div>
+    
+        <%} else { %>
+            
+        <% } %>
+        

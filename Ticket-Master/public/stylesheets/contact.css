@@ -1,0 +1,29 @@
+input[type=text],#message {
+    border: 3px solid grey;
+    width: 30em;
+    background: none;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    outline:none;
+    text-align: left;
+    margin-bottom: 0.9em;
+}
+.textarea {
+    border: 3px solid grey;
+    width: 30em;
+    background: none;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    outline: none;
+    resize:none;
+    height: 2em;
+    text-align: left;
+
+}
+
+label{
+
+    text-align: left;
+}

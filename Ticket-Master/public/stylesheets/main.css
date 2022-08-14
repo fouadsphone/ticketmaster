@@ -1,0 +1,234 @@
+/*
+File Name - main.css
+Student Name - Ronak Barochia
+Student ID - 301239977  
+*/
+
+/*body*/
+
+body {
+  overflow-x: hidden;
+    position: relative;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    color: #000000;
+  }
+
+  
+/* Home */
+  .img{
+    /*background-image: url('/images/bg.jpg');*/
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+  .button
+  {
+    margin-left: 750px;
+    text-align: center;
+  }
+
+ .home-text{
+   margin-top: 180px;
+   color: #000000; 
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+    font-size: 50px;
+    text-align: center;
+ }
+
+ .home-text span{
+   font-size: 20px;
+   color: #000000;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+ /* Nav bar*/
+
+ .space li{
+   font-size: 20px;
+   margin-left: 0px;
+   
+   
+ }
+
+ /* About */
+ .container-fluid-md{
+ /* background-image: url('/images/bg.jpg');*/
+  background-position: center;  
+  height: 100%;
+  width: 100%;
+  position: fixed;
+
+  z-index: -1;
+}
+
+ .about-text{
+  text-align: center; 
+  font-family: fantasy; 
+  margin-top: 30px;
+  color: #000000;
+  margin-bottom: 25px;
+ }
+
+ .about-para{
+   font-size: 17px;
+   line-height: 25px;
+   color: #000000;
+   box-shadow: 0 0 10px 0 rgb(10, 10, 10);
+   padding: 29px 35px;
+ }
+
+ /* Project */
+ .container-fluid1{
+    background-image: url('/images/bg.jpg');
+    background-position: center;
+    background-size:cover;
+    background-attachment:scroll;
+    height:max-content;
+    width: 100%;   
+    z-index: -1;
+    color: #000000;
+}
+ .project-text-head{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 17px; 
+  box-shadow: 0 0 10px 0 rgb(17, 17, 17);
+  padding: 10px 10px 5px 5px;
+  line-height: 25px;
+  text-align: justify;
+ }
+
+ .project-text-head2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px; 
+  box-shadow: 0 0 10px 0 rgb(17, 17, 17);
+  padding: 15px 15px 5px 20px;
+  line-height: 25px;
+  text-align: justify;
+ }
+
+ /* Services */
+
+ .container-fluid{
+   
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+ }
+
+ .service-text, .service-text2{
+   color: #000000;
+   text-align: justify;
+ }
+
+ .col-12{
+  
+   font-family: fantasy; 
+ }
+ .service-text-head{
+   text-align: center;
+   margin-top: 30px;
+ }
+
+ .services-img img{
+   margin-left: 20px;
+   height: 80px;
+   width: 70px;
+ }
+
+ .service-text{
+   margin-left:-130px;
+   
+ }
+
+ .service-text h3{
+   font-size: 30px;
+  margin-bottom: 6px;
+}
+
+ .service-text p{
+   line-height: 22px;
+   font-size: 16px;
+   margin-bottom: 8px;
+  
+} 
+
+.service-text2{
+  margin-top:-10px;
+  margin-left: 30px;
+}
+
+.service-text2 p{
+  line-height: 22px;
+  font-size: 16px;
+  margin-right:0px;
+}
+
+/* Contact */
+.container-contact{
+  
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.contact{
+  background-color: #000000;
+  margin-top: 25px;
+  box-shadow: 0 0 5px 0 rgb(19, 18, 18);
+  
+}
+
+.contact-form{
+  margin-top: 1px; 
+  line-height: 25px; 
+  
+}
+
+.contact-form input{
+  width: 500px;
+  margin-bottom: 4px;
+}
+
+.contact-form label{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  margin-bottom: 2px;
+}
+
+.contact-icon{
+  margin-left: 22px;
+  margin-top: 20px;
+  
+}
+
+.contact-panel{
+  background-color: rgb(85, 85, 85); 
+  height: 50px; 
+  width: 700px; 
+  margin-left: 350px;
+  margin-top:50px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  
+}
+
+.contact-panel p{
+  margin-left: 160px;
+}
+
+.contact-panel p i{
+  color: white;
+  margin-top: 10px;
+  margin-left: 70px;
+}
+
